@@ -38,7 +38,7 @@
 #Authenticate with XML file
 $cred = Import-Clixml "C:\Automation\credentials\automation.xml"
 
-#create Session
+#Create Session
 connect-msolservice -Credential $cred
 
 
