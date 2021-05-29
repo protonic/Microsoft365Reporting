@@ -44,7 +44,7 @@ connect-msolservice -Credential $cred
 
 # Creating a function that generates the reports
 function Get-Office365IdentityReport {
-# Several reports
+#Several reports
 $a=Get-MsolUser -All | where-object {$_.whenCreated -gt (Get-Date).AddDays(-30)} | select UserPrincipalName,isLicensed,WhenCreated | ConvertTo-Html 
 #$b=Get-MsolUser -All | Where {$_.IsLicensed -eq $True -AND $_.BlockCredential -eq $True} | Select UserPrincipalName,isLicensed,WhenCreated,BlockCredential | ConvertTo-Html 
 
