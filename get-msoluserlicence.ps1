@@ -24,8 +24,7 @@
  
 .RELEASENOTES https://www.youtube.com/c/technologywanderers
  
- 
-#>
+ #>
 
 # The Output will be written to this file in the current working directory
 $LogFile = "Office_365_Licenses.csv"
