@@ -32,7 +32,7 @@
 <# 
  
 .DESCRIPTION 
- The script gets all licensed users accounts and creates reports of licenses usage by country. 
+ The script gets all licensed users accounts and creates reports of licenses usage by Country. 
  
 #> 
 
