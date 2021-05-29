@@ -282,7 +282,7 @@ Out-File -InputObject $finalReport -FilePath $HtmlReportFilePath -Encoding utf8 
 
 # Change your SMTP server and sender receiver with subjectline #
 
-Send-MailMessage -from "automation@techwanderers.in" -To "automation@techwanderers.in" -Subject "Automation: Office 365 License Summary for Techwanderers" -Body "$finalReport </p></p><br></p></p><br></p></p></p><br></p></p>Best Regards,<br>Office 365 Automation Support<br>URL: https://www.youtube.com/c/technologywanderers<br>automation@yourdomain.in<br>India<br>"   -BodyAsHtml  -Priority High -DeliveryNotificationOption OnSuccess, OnFailure -Credential $cred -SmtpServer smtp.office365.com -Port 587 -UseSsl -Attachments .\Office365LicenseSummary.html
+Send-MailMessage -from "automation2@techwanderers.in" -To "automation@techwanderers.in" -Subject "Automation: Office 365 License Summary for Techwanderers" -Body "$finalReport </p></p><br></p></p><br></p></p></p><br></p></p>Best Regards,<br>Office 365 Automation Support<br>URL: https://www.youtube.com/c/technologywanderers<br>automation@yourdomain.in<br>India<br>"   -BodyAsHtml  -Priority High -DeliveryNotificationOption OnSuccess, OnFailure -Credential $cred -SmtpServer smtp.office365.com -Port 587 -UseSsl -Attachments .\Office365LicenseSummary.html
 
 Remove-Item -Path .\Office365LicenseSummary.html -Force
 
