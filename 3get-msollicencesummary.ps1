@@ -41,7 +41,7 @@
 
 #Provide O365 admin creds
 #create crdential here this in only one time command # it once xml is generated.
-#Get-Credential "automation@techwanderers.in" | Export-Clixml .\creds.xml
+#Get-Credential "automation@techwanderers.in" | Export-Clixml C:\Automation\credentials\automation.xml
 
 #Authenticate with XML file
 $cred = Import-Clixml "C:\Automation\credentials\automation.xml"
